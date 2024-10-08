@@ -1,0 +1,42 @@
+.products-container {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.products-container .bar {
+    margin: 40px 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.bar .tablink {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 14px 24px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bar .tablink.active {
+    color: #D10024;
+    border-bottom: 1px solid #D10024;
+}
+
+.bar .tablink:hover {
+    color: #D10024;
+}
+
+.products-container .items {
+    display: none;
+    flex-wrap: wrap;
+    margin: 0 25px;
+    gap: 30px;
+}
+
+.products-container .items.active {
+    display: flex;
+}

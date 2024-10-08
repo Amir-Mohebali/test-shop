@@ -1,0 +1,223 @@
+.container {
+    max-width: 1440px;
+    margin: 83px auto 0px;
+}
+
+.product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product-image {
+    /* padding-left: 30px; */
+    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.product-image .view-box {
+    width: 75%;
+    height: 400px;
+}
+
+.product-image .view-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-image .change-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.change-box .thumbnail {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #d1d2d3;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-box .thumbnail img {
+    width: 70%;
+    object-fit: contain;
+}
+
+.thumbnail.selected {
+    border-color: #D10024;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.product-details h2 {
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+
+.detail, .options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.detail h3, .options h3 {
+    margin: 0px;
+}
+
+.detail span {
+    color: #8D99AE;
+}
+
+.product-price {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.off-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #D10024;
+    margin-right: 16px;
+}
+
+.main-price {
+    font-size: 20px;
+    color: #7E7E7E;
+}
+
+.item-price a {
+    padding: 8px 30px;
+}
+
+.product-description {
+    width: 100%;
+    margin: 0px 40px;
+}
+
+.bar {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.tab-link {
+    background: none;
+    border: none;
+    outline: none;
+    color: #8D99AE;
+    padding: 14px 24px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tab-link.active {
+    color: #D10024;
+    border-bottom: 1px solid #D10024;
+}
+
+.tab-link:hover {
+    color: #D10024;
+}
+
+.tab-content {
+    display: none;
+    margin: 0 25px;
+}
+
+.tab-content.active {
+    display: flex;
+}
+
+.reviews {
+    flex: 6;
+}
+
+.review {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.review-info {
+    flex: 2;
+}
+
+.review-info .sender {
+    margin-block: 4px;
+}
+
+.review-content {
+    flex: 10;
+}
+
+.rate {
+    font-size: 16px;
+    color: #d1d2d3;
+}
+
+.rate svg.filled {
+    color: #D10024;
+}
+
+.total-rate {
+    flex: 2;
+}
+
+.total-rate .row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.total-rate .row:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    margin-block: 20px;
+}
+
+.total-rate .row:first-child .rate {
+    font-size: 24px;
+}
+
+.total-rate .row .rate-bar {
+    position: relative;
+    height: 9px;
+    background-color: #E4E7EC;
+    width: 120px;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+
+.total-rate .row .rate-bar div {
+    background-color: #D10024;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+}

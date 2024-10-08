@@ -1,0 +1,59 @@
+
+.option {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.option-box {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.option-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.option-box .checkmark {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    height: 6px;
+    width: 6px;
+    background-color: #D10024;
+    border-radius: 50%;
+}
+
+.option-box input:checked~.checkmark {
+    display: block;
+}
+
+.option-box .option-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 30px;
+    color: #8D99AE;
+    border: 1px solid #8D99AE;
+    border-radius: 6px;
+    padding: 2px;
+    /* background: rebeccapurple; */
+    background-clip: content-box;
+}
+
+.option-box input:checked~.option-value {
+    color: #D10024;
+    border-color:#D10024;
+}

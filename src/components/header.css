@@ -1,0 +1,8 @@
+.navbar {
+    background-color: #ddd;
+    padding: 8px 16px;
+}
+
+.navbar a {
+    padding: 12px;
+}
